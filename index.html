@@ -6,9 +6,146 @@
     <title>Portfolio - Ruben Jans</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
+    <header class="border-bottom" style="padding: 1.5rem 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3 text-md-start text-center">
+                    <h1 class="h4 m-0">Ruben Jans</h1>
+                </div>
+                <nav class="col-12 col-md-6 d-flex justify-content-center">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projecten</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#facts">Facts</a></li>
+                    </ul>
+                </nav>
+                <div class="col-12 col-md-3 d-none d-md-block"><!-- right spacer or future actions --></div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Intro left text, right image -->
+        <section id="intro" class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <article class="col-12 col-md-6 order-md-1 order-2">
+                        <h2 class="h3">Welkom</h2>
+                        <p>
+                            Ik ben Ruben Jans, een gepassioneerde ontwikkelaar. Hieronder vind je meer informatie
+                            over mij, mijn projecten en enkele leuke feiten.
+                        </p>
+                        <p>
+                            Deze portfolio geeft een overzicht van mijn werk, vaardigheden en interesses.
+                        </p>
+                    </article>
+                    <article class="col-12 col-md-6 text-center order-md-2 order-1">
+                        <img src="https://photos.fife.usercontent.google.com/pw/AP1GczP6_x1GuR-UQ6P8PkU3d06bdkUHqQtX1Oz60c6F2PZJLpBTMiV_64fo=w686-h914-s-no-gm?authuser=0" alt="Intro afbeelding" class="img-fluid rounded shadow-sm">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About Me with centered title, left image, right text -->
+        <section id="about" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">About Me</h2>
+                <div class="row align-items-start g-4">
+                    <article class="col-12 col-md-5 text-center">
+                        <img src="https://via.placeholder.com/500x500" alt="Ruben Jans" class="img-fluid rounded-circle shadow-sm">
+                    </article>
+                    <article class="col-12 col-md-7">
+                        <h3 class="h5">Over mij</h3>
+                        <p>
+                            Ik ben een student/ontwikkelaar met interesse in webtechnologieën, front-end en back-end
+                            ontwikkeling. Ik hou van het bouwen van gebruiksvriendelijke interfaces en het oplossen
+                            van complexe problemen.
+                        </p>
+                        <p>
+                            Vaardigheden: HTML, CSS, JavaScript, Bootstrap, en meer.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Projecten with centered title and 3 project articles -->
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Projecten</h2>
+                <div class="row g-4">
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Project 1</h3>
+                                <p class="card-text">Korte beschrijving van project 1.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 2">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Project 2</h3>
+                                <p class="card-text">Korte beschrijving van project 2.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 3">
+                            <div class="card-body">
+                                <h3 class="h5 card-title">Project 3</h3>
+                                <p class="card-text">Korte beschrijving van project 3.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Facts with centered title and 3 facts -->
+        <section id="facts" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Facts</h2>
+                <div class="row g-4 justify-content-center">
+                    <article class="col-12 col-md-4">
+                        <div class="p-4 border rounded h-100">
+                            <h3 class="h6">Fact 1</h3>
+                            <p>Ik drink mijn koffie zwart en codeer graag vroeg in de ochtend.</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <div class="p-4 border rounded h-100">
+                            <h3 class="h6">Fact 2</h3>
+                            <p>Ik ben een fan van clean code en consistente naming conventions.</p>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <div class="p-4 border rounded h-100">
+                            <h3 class="h6">Fact 3</h3>
+                            <p>In mijn vrije tijd leer ik nieuwe frameworks en experimenteer ik met UI/UX.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (optional) -->
+    <footer class="py-4 border-top">
+        <div class="container text-center">
+            <small>&copy; <span id="year"></span> Ruben Jans</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
