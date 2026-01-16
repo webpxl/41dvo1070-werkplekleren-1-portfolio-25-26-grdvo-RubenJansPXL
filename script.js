@@ -54,4 +54,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
   revealEls.forEach(el => revealObserver.observe(el));
+
+  // View More/Less toggle for project cards
+  const toggleButtons = document.querySelectorAll('.toggle-text');
+  toggleButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const paragraph = button.previousElementSibling;
+      const fullText = paragraph.getAttribute('data-full-text');
+
+      if (paragraph.textContent.includes('...')) {
+        // Show full text
+        paragraph.textContent = fullText;
+        button.textContent = 'View Less';
+      } else {
+        // Show truncated text
+        paragraph.textContent = fullText.substring(0, 100) + '...';
+        button.textContent = 'View More';
+      }
+    });
+  });
 });
