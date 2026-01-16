@@ -49,6 +49,9 @@ header h1 {
   font-weight: 800;
   letter-spacing: 0.8px;
 }
+header h1.h4 {
+  color: #ffffff !important;
+}
 header .nav-link {
   color: rgba(255,255,255,0.92);
   font-weight: 700;
