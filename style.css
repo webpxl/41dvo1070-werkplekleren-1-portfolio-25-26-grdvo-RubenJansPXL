@@ -24,6 +24,12 @@ body {
   background: linear-gradient(160deg, var(--gradient-start) 0%, rgba(79,161,235,0.6) 45%, var(--gradient-end) 100%);
   background-attachment: fixed;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Option 1: gradient (default, can be explicit) */
@@ -264,8 +270,10 @@ footer {
   background: #ffffff;
   backdrop-filter: saturate(1.05) blur(2px);
   border-top: 4px solid rgba(0,0,0,0.12);
+  text-align: center;
 }
 footer small { color: #111; font-weight: 700; }
+footer span, footer a { display: block; }
 
 /* Anchor scroll offset for fixed headers */
 section { scroll-margin-top: 96px; }
