@@ -42,5 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { root: null, threshold: 0.6 });
 
   sections.forEach(sec => observer.observe(sec));
-});
 
+  // Reveal on scroll animations
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+});
