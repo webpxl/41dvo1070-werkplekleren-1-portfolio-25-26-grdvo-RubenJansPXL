@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Ruben Jans</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="Script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Ruben Jans</h1>
+        <p>Digital & Graphic Designer</p>
+    </div>
+
+    <nav>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Over mij</a>
+        <a href="#skills" class="nav-link">Vaardigheden</a>
+        <a href="#projects" class="nav-link">Projecten</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#reflectie" class="nav-link">Reflectie</a>
+    </nav>
+</header>
+
+<main>
+
+    <aside class="sidebar">
+        <img src="images/profielfoto.jpg" alt="Foto van Ruben" class="profile-img">
+
+        <h2>Ruben Jans</h2>
+        <p class="subtitle">Digital & Graphic Designer</p>
+
+        <div class="contact-info">
+            <p>Tel.: +32 468 51 35 61</p>
+            <p>Email: rubenjans@outlook.com</p>
+            <p>Insta: glitch_rss</p>
+            <p>Locatie: België</p>
+        </div>
+
+        <section class="side-card" id="about">
+            <h3>Over mij</h3>
+            <p>
+                Ik ben iemand die graag zelfstandig werkt en veel waarde hecht aan veiligheid
+                en zorgvuldigheid. Ik werk nauwkeurig en houd mijn omgeving graag ordelijk en netjes.
+            </p>
+        </section>
+
+        <section class="side-card">
+            <h3>Persoonlijke weetjes</h3>
+            <ul>
+                <li>- Ik lees graag fantasy en fictie.</li>
+                <li>- Ik speel graag games.</li>
+                <li>- Muziek helpt mij focussen.</li>
+            </ul>
+        </section>
+
+        <section class="side-card">
+            <h3>Design Quote</h3>
+            <p>“Design is not just what it looks like and feels like. Design is how it works.”</p>
+        </section>
+
+        <section class="side-card">
+            <h3>Mijn doel</h3>
+            <p>Ik wil mij verder ontwikkelen als Digital & Graphic Designer.</p>
+        </section>
+
+        <section class="side-card" id="contact">
+            <h3>Contacteer mij</h3>
+            <p>Ben je op zoek naar een creatieve designer? Laat gerust iets weten.</p>
+            <button id="mailBtn">Stuur een e-mail</button>
+        </section>
+    </aside>
+
+    <section class="content">
+
+        <article class="card intro" id="home">
+            <div>
+                <h2>Welkom!</h2>
+                <p>
+                    Ik ben Ruben Jans, student Digitale Vormgeving aan Hogeschool PXL. Ik heb een grote interesse in grafisch ontwerp en UX/UI design.
+                </p>
+                <p>
+                    Ik combineer creativiteit met technologie om gebruiksvriendelijke en visueel sterke ontwerpen te maken.
+                </p>
+            </div>
+
+            <div id="skills" class="skills-section">
+                <h3>Vaardigheden</h3>
+
+                <div class="skill">
+                    <span>Illustrator</span>
+                    <div><div style="width: 85%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>Photoshop</span>
+                    <div><div style="width: 75%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>Figma</span>
+                    <div><div style="width: 70%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>HTML</span>
+                    <div><div style="width: 60%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div><div style="width: 65%"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div><div style="width: 50%"></div></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Eigenschappen</h3>
+                <ul class="tags">
+                    <li>Zelfstandigheid</li>
+                    <li>Veiligheid</li>
+                    <li>Nauwkeurigheid</li>
+                    <li>Betrouwbaarheid</li>
+                    <li>Orde en netheid</li>
+                    <li>Creatief denken</li>
+                </ul>
+            </div>
+        </article>
+
+        <section class="two-columns">
+            <article class="card">
+                <h2>Waarom Digitale Vormgeving?</h2>
+                <p>
+                    Ik koos voor Digitale Vormgeving omdat ik creativiteit graag combineer met technologie.
+                    Ik vind het interessant om ideeën om te zetten in visuele ontwerpen en interactieve toepassingen.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Waarom ben ik een goede designer?</h2>
+                <ul class="checklist">
+                    <li>Ik denk vanuit de gebruiker.</li>
+                    <li>Ik werk nauwkeurig en gestructureerd.</li>
+                    <li>Ik sta open voor feedback.</li>
+                    <li>Ik combineer creativiteit met logica.</li>
+                    <li>Ik geef niet snel op.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="card" id="projects">
+            <h2>Projecten</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="images/galabal.jpg" alt="Galabal poster">
+                    <h3>Galabal Poster</h3>
+                    <p><strong>Vak:</strong> Decor, Etalage & Publiciteit</p>
+                    <p>Poster ontworpen voor het jaarlijkse galabal van de school.</p>
+                    <button>Bekijk details</button>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/sculptuur.jpg" alt="Sculptuur tekening">
+                    <h3>Sculptuur</h3>
+                    <p><strong>Vak:</strong> Waarnemingstekenen</p>
+                    <p>Een studie van een sculptuur met focus op verhouding, schaduw en textuur.</p>
+                    <button>Bekijk details</button>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/book.jpg" alt="Favoriet boek">
+                    <h3>Favoriet Boek</h3>
+                    <p><strong>Persoonlijk project</strong></p>
+                    <p>Een persoonlijke sectie over boeken, inspiratie en verhalen.</p>
+                    <button>Bekijk details</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="two-columns">
+            <article class="card">
+                <h2>Opleidingen</h2>
+                <ul class="education">
+                    <li>sep 2025 - jun 2027 — Digitale Vormgeving, Hogeschool PXL</li>
+                    <li>sep 2022 - jun 2025 — Decor, Etalage & Publiciteit, Materdei</li>
+                    <li>sep 2021 - jun 2022 — STEM-Houttechnieken, WICO Campus TIO</li>
+                    <li>sep 2020 - jun 2021 — STEM, Juniorcampus</li>
+                    <li>sep 2019 - jun 2020 — STEM, WICO Campus TIO</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Niet-school project</h2>
+                <p>
+                    Mijn persoonlijke website/portfolio is een project waar ik mijn design en code combineer.
+                    Van layout tot HTML, CSS en JavaScript: ik bouw dit stap voor stap zelf op.
+                </p>
+            </article>
+        </section>
+
+        <section class="card" id="reflectie">
+            <h2>Reflectie</h2>
+            <p>
+                Hier kan je mijn eindreflectie downloaden als tekstbestand.
+            </p>
+            <button onclick="downloadReflectie()">Download reflectie</button>
+        </section>
+
+    </section>
+</main>
+
+
+<footer class="privacy">
+    <p>&copy;2026 Ruben Jans. Alle rechten voorbehouden.</p>
+    <a href="#" onclick="showPrivacyPolicy(event)"><u>Privacy Policy</u></a>
+</footer>
+
+<div id="privacyModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closePrivacyPolicy()">&times;</button>
+        <div id="privacyContent"></div>
+    </div>
+</div>
+
+</body>
+</html>
