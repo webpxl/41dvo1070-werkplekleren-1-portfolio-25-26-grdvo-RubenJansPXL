@@ -1,1 +1,1 @@
-
+Ik heb gebruikt gemaakt van Copilot en chat GPT voor mij te helpen met code te schrijven.
