@@ -85,10 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const mailButton = document.getElementById("mailBtn");
-
-    mailButton.addEventListener("click", () => {
-        window.location.href = "mailto:rubenjans@outlook.com";
-    });
+    if (mailButton) {
+        mailButton.addEventListener("click", () => {
+            window.location.href = "mailto:rubenjans@outlook.com";
+        });
+    }
 
     const navLinks = document.querySelectorAll('a.nav-link[href^="#"]');
     navLinks.forEach(link => {

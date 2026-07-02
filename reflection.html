@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflectie - Ruben Jans</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Ruben Jans</h1>
+        <p>Digital & Graphic Designer</p>
+    </div>
+
+    <nav>
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./index.html#about" class="nav-link">Over mij</a>
+        <a href="./index.html#skills" class="nav-link">Vaardigheden</a>
+        <a href="./index.html#projects" class="nav-link">Projecten</a>
+        <a href="./index.html#contact" class="nav-link">Contact</a>
+        <a href="./reflection.html" class="nav-link active">Reflectie</a>
+    </nav>
+</header>
+
+<main>
+    <article class="card" style="grid-column: 1 / -1;">
+        <h2>Reflectie</h2>
+        <p>
+            Hieronder staat mijn eindreflectie volledig uitgeschreven.
+        </p>
+
+        <h3>Rol 1</h3>
+        <p>
+            Als creatieve vormgever ontwerp ik beelden die niet alleen esthetisch zijn, maar ook functioneel.
+            Met vormen, kleuren en compositie geef ik ideeën vorm tot designs die de aandacht trekken en de gebruiker begeleiden.
+            Of het nu gaat om een logo of een complete interface, ik werk tot in detail om elk ontwerp kloppend te maken.
+        </p>
+
+        <h3>Rol 2</h3>
+        <p>
+            Als front-end developer breng ik ideeën tot leven in interactieve websites en applicaties.
+            Met overzichtelijke en doordachte code in HTML, CSS en JavaScript zorg ik voor oplossingen die zowel technisch sterk als gebruiksvriendelijk zijn.
+            Problemen zie ik als puzzels: ik analyseer ze, denk vooruit en vind een slimme route naar een werkende oplossing.
+            Van een lastige bug tot een complexe functionaliteit, ik combineer logica met creativiteit om elk obstakel aan te pakken.
+        </p>
+
+        <h3>Rol 3</h3>
+        <p>
+            Ik hecht veel waarde aan duidelijke communicatie en teamwork.
+            Binnen een team durf ik mijn ideeën te delen en knelpunten te benoemen, zodat we samen tot betere oplossingen komen.
+            Ik sta open voor de inbreng van anderen, werk prettig samen en neem actief verantwoordelijkheid.
+            In zowel het Nederlands als het Engels communiceer ik helder, zodat iedereen weet waar we naartoe werken.
+        </p>
+
+        <h3>Rol 4</h3>
+        <p>
+            Design en technologie zijn voortdurend in beweging, en juist dat inspireert mij.
+            Ik ben altijd nieuwsgierig naar nieuwe tools, technieken en ontwikkelingen, en blijf mezelf uitdagen om bij te leren.
+            Elke nieuwe uitdaging zie ik als een kans om te groeien en mijn vaardigheden verder te versterken.
+            Met deze leergierige mindset blijf ik me ontwikkelen binnen dit dynamische vakgebied.
+        </p>
+
+        <button onclick="downloadReflectie()">Download reflectie</button>
+    </article>
+</main>
+
+<footer class="privacy">
+    <p>&copy;2026 Ruben Jans. Alle rechten voorbehouden.</p>
+    <a href="#" onclick="showPrivacyPolicy(event)"><u>Privacy Policy</u></a>
+</footer>
+
+<div id="privacyModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closePrivacyPolicy()">&times;</button>
+        <div id="privacyContent"></div>
+    </div>
+</div>
+
+<div id="projectModal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeProjectDetails()">&times;</button>
+        <div id="projectContent"></div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
