@@ -35,10 +35,30 @@ function closePrivacyPolicy() {
     modal.style.display = 'none';
 }
 
+function showProjectDetails(title, text) {
+    const modal = document.getElementById('projectModal');
+    const contentDiv = document.getElementById('projectContent');
+
+    contentDiv.innerHTML = `
+        <h2>${title}</h2>
+        <p>${text}</p>
+    `;
+    modal.style.display = 'flex';
+}
+
+function closeProjectDetails() {
+    const modal = document.getElementById('projectModal');
+    modal.style.display = 'none';
+}
+
 document.addEventListener('click', (e) => {
-    const modal = document.getElementById('privacyModal');
-    if (e.target === modal) {
-        modal.style.display = 'none';
+    const privacyModal = document.getElementById('privacyModal');
+    const projectModal = document.getElementById('projectModal');
+    if (e.target === privacyModal) {
+        privacyModal.style.display = 'none';
+    }
+    if (e.target === projectModal) {
+        projectModal.style.display = 'none';
     }
 });
 
@@ -143,7 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
     projectButtons.forEach((button) => {
         button.addEventListener('click', () => {
             const index = Array.from(projectButtons).indexOf(button);
-            alert(projectTexts[index] || 'Meer informatie volgt binnenkort!');
+            const card = button.closest('.project-card');
+            const title = card?.querySelector('h3')?.textContent || 'Project details';
+            showProjectDetails(title, projectTexts[index] || 'Meer informatie volgt binnenkort!');
         });
     });
 });
