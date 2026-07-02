@@ -43,6 +43,10 @@ header {
     color: #d6c7bd;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
 nav a {
     color: #f4eee9;
     text-decoration: none;
